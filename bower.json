@@ -1,0 +1,32 @@
+{
+  "name": "weather-app",
+  "version": "0.0.1",
+  "authors": [
+      "Nawanshu Choudhary"
+  ],
+  "description": "A weather application displaying the 5 day weather forecast for a location of your choice using openweathermap API written in AngularJs.",
+  "main": "app/index.html",
+  "keywords": [
+    "angular",
+    "openweathermap",
+    "weatherapp"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.2.0",
+    "angular-resource": "^1.2.0",
+    "angular-route": "^1.2.0",
+    "bootstrap": "~3.0.0",
+    "iso-3166-country-codes-angular": "~1.0.2",
+    "jquery": "~2.0.3"
+  },
+  "appPath": "app",
+  "moduleName": "weatherApp"
+}
