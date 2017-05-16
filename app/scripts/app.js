@@ -8,24 +8,12 @@
  *
  * Main module of the application.
  */
-angular
-  .module('weatherAppApp', [
-    'ngAnimate',
-    'ngAria',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+angular.module('weatherApp', [
+  'ngRoute',
+  'weatherApp.services',
+  'weatherApp.controllers',
+  "iso-3166-country-codes"
+]).
+config(['$routeProvider', function($routeProvider) {
+  
+}]);
