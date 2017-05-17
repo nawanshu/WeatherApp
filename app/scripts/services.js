@@ -6,7 +6,7 @@ angular.module('weatherApp.services', ['ngResource'])
 
   .factory('weatherSvc', function($resource) {
 
-    var apiKey = '279b4be6d54c8bf6ea9b12275a567156';
+    var apiKey = '34f84e58f8bf2e934ef56a611e76be2a';
     var apiBaseUrl = 'http://api.openweathermap.org/data/2.5/';
 
     return $resource(apiBaseUrl + ':path/:subPath?q=:location',
