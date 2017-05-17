@@ -1,4 +1,4 @@
-# Weather Appication
+# Weather Application
     A weather application displaying the 5 day weather forecast for a location of your choice using openweathermap API written in AngularJs.
 
 ## App building material
