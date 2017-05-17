@@ -15,5 +15,6 @@ angular.module('weatherApp', [
   "iso-3166-country-codes"
 ]).
 config(['$routeProvider', function($routeProvider) {
-  
+  $routeProvider.when('/forecast', {templateUrl: 'views/forecast.html', controller: 'WeatherCtrl'});
+  $routeProvider.otherwise({redirectTo: '/forecast'});
 }]);
