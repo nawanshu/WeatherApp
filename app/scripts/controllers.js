@@ -4,7 +4,6 @@
 
 angular.module('weatherApp.controllers', [])
 
-  // Controller for "open weather map" api data search
   .controller('weatherCtrl',
     ['$scope','weatherSvc','ISO3166',
       function($scope,openWeatherMap,ISO3166) {
@@ -23,12 +22,10 @@ angular.module('weatherApp.controllers', [])
         background: 'url(./img/weather.jpg)'
     }  */  
     
-    // On initialization load data for first example entry
     wd.forecast = openWeatherMap.queryForecastDaily({
       location: "Pune"
     });
 
-    // Get forecast data for location as given in $scope.location
     $scope.getForecastByLocation = function() {
       if (wd.location == '' || wd.location == undefined) {
         wd.message = 'Please provide a location';
@@ -38,8 +35,7 @@ angular.module('weatherApp.controllers', [])
         location: wd.location
       });
     };
-
-    // Get icon image url
+        
     $scope.getIconImageUrl = function(iconName) {
       return (iconName ? wd.iconBaseUrl + iconName + '.png' : '');
     };
