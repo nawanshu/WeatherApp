@@ -1,0 +1,28 @@
+/* app css stylesheet */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 180px;
+    background-image: url(../img/weather.jpg);
+    
+}
+
+.weather.panel {
+    font-weight: normal!important;
+    font-family: calibri;
+}
+
+.weather.panel .panel-heading {
+    font-weight: bolder !important;
+    font-size: 1.2em;
+    font-family: calibri;
+}
+
+.weather.panel .panel-footer {
+    font-weight: lighter !important;
+    font-family: calibri;
+}
+h3 small{
+    float: right !important;
+    color:black !important;
+}
